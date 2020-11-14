@@ -106,7 +106,7 @@ function tryReadWord(lines: Line[]) {
 		line =>
 			line.borderBox.top + originalViewportTop >
 				window.visualViewport.pageTop &&
-			line.borderBox.top + originalViewportTop <
+			line.borderBox.bottom + originalViewportTop <
 				window.visualViewport.pageTop + window.innerHeight
 	);
 	// increment the progress array left to right if found
